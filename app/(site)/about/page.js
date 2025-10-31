@@ -44,11 +44,12 @@ export default function AboutPage() {
 
                 <div className="text-gray-300 space-y-6 text-lg">
                     <p>
-                        I'm an Information Engineering student at Universitas
-                        Gadjah Mada, currently in my 3rd semester, passionate in
-                        exploring new things around technology. Through my
-                        journey in tech and design, I eager to keep learning,
-                        growing, and creating things that make a difference.
+                        I&apos;m an Information Engineering student at
+                        Universitas Gadjah Mada, currently in my 3rd semester,
+                        passionate in exploring new things around technology.
+                        Through my journey in tech and design, I&apos;m eager to
+                        keep learning, growing, and creating things that make a
+                        difference.
                     </p>
                 </div>
             </div>
@@ -57,23 +58,23 @@ export default function AboutPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                     <div className="lg:col-span-2 text-gray-300 space-y-6 text-lg">
                         <p data-aos="fade-up" data-aos-offset="150" data-aos-delay="200">
-                            At university, I've joined several committees, such
-                            as being a Public Relations staff for Open House
-                            DTETI 2024, a Lightingman staff in the ENFORIAN
-                            event, and a Technical staff for the UX Competition
-                            at FindIT! 2025. These experiences helped me gain
-                            valuable insights and build meaningful connections
-                            with others.
+                            At university, I&apos;ve joined several committees,
+                            such as being a Public Relations staff for Open
+                            House DTETI 2024, a Lightingman staff in the
+                            ENFORIAN event, and a Technical staff for the UX
+                            Competition at FindIT! 2025. These experiences
+                            helped me gain valuable insights and build
+                            meaningful connections with others.
                         </p>
                         <p data-aos="fade-up" data-aos-offset="150" data-aos-delay="400">
-                            I've also participated in several trainings and
+                            I&apos;ve also participated in several trainings and
                             bootcamps to strengthen my skills and gain more
                             hands-on experience, including website development,
                             image processing, and artificial intelligence.
                         </p>
                         <p data-aos="fade-up" data-aos-offset="150" data-aos-delay="600">
-                            Through these opportunities, I've developed not only
-                            my technical abilities but also teamwork,
+                            Through these opportunities, I&apos;ve developed not
+                            only my technical abilities but also teamwork,
                             adaptability, and communication skills — things I
                             truly value as I continue exploring my path in tech
                             and design.
@@ -82,7 +83,7 @@ export default function AboutPage() {
                         <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="800">
                             <div className="pt-4">
                                 <h3 className="text-1xl mb-4 font-semibold text-white">
-                                    Technologies I've worked with
+                                    Technologies I&apos;ve worked with
                                 </h3>
                                 <div className="flex flex-wrap gap-3">
                                     {[
