@@ -30,7 +30,6 @@ const ProjectCard = ({
       data-aos="fade-up"
       data-aos-delay={100 * index}
     >
-      {/* Overlay Deskripsi */}
       <div
         className={`absolute inset-y-0 ${descriptionPositionClass} w-full p-6 bg-[#2d333b] transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-20 flex flex-col justify-between`}
       >
@@ -86,14 +85,12 @@ const ProjectCard = ({
         )}
       </div>
 
-      {/* Gambar Thumbnail */}
       <img
         src={imagePath}
         alt={`${title} Thumbnail`}
         className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out ${thumbnailTransitionClass} group-hover:opacity-10 z-10`}
       />
 
-      {/* Judul Default */}
       <div className="absolute inset-0 flex items-end p-6 bg-black/40 group-hover:opacity-0 transition duration-500">
         <h3 className="text-2xl font-bold">{title}</h3>
       </div>
@@ -108,7 +105,7 @@ export default function ProjectsPage() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/projects?depth=2");
+        const res = await fetch("https://webpersonal-zahira.vercel.app/api/projects?depth=2");
         const data = await res.json();
         setProjects(data?.docs || []);
       } catch (err) {
