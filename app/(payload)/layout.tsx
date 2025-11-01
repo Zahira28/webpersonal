@@ -2,13 +2,13 @@ import config from "@payload-config";
 import "@payloadcms/next/css";
 import { RootLayout } from "@payloadcms/next/layouts";
 import type { ServerFunctionClient } from "payload";
+import type { SanitizedConfig } from 'payload';
 import React from "react";
-import { importMap } from "./admin/importMap.js";
 
 type Args = {
   children: React.ReactNode;
-  config: typeof config; 
-  importMap: typeof importMap; 
+  config: Promise<SanitizedConfig>; 
+  importMap: Record<string, string>; 
   serverFunction: ServerFunctionClient;
 };
 
