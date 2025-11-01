@@ -19,10 +19,13 @@ const serverFunction: ServerFunctionClient = async function (args) {
 };
 
 export default function PayloadLayout({ children }: Args) {
-  return React.createElement(RootLayout, {
-    config,
-    importMap,
-    serverFunction,
-    children,
-  });
+  return (
+    <RootLayout
+      config={config} 
+      importMap={importMap}
+      serverFunction={serverFunction}
+    >
+      {children}
+    </RootLayout>
+  );
 }
