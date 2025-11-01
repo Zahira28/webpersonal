@@ -24,8 +24,8 @@ export default function PayloadLayout({ children }: Args) {
       config={config}
       importMap={importMap}
       serverFunction={serverFunction}
+      children={children}
     >
-      {children}
     </RootLayout>
   );
 }
