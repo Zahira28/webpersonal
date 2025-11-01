@@ -105,7 +105,7 @@ export default function ProjectsPage() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await fetch("https://webperszahira.vercel.app/api/projects?depth=2");
+        const res = await fetch(`${process.env.NEXT_PUBLIC_PAYLOAD_URL}/api/projects?depth=2`);
         const data = await res.json();
         setProjects(data?.docs || []);
       } catch (err) {
